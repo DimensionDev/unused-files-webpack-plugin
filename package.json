@@ -1,12 +1,13 @@
 {
   "name": "@dimensiondev/unused-files-webpack-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Glob all files that are not compiled by webpack under webpack's context",
   "repository": "https://github.com/DimensionDev/unused-files-webpack-plugin",
   "license": "MIT",
   "bin": "dist/bin.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "rimraf dist && tsc"
+    "prepublishOnly": "rimraf dist && tsc"
   },
   "dependencies": {
     "glob": "^7.1.7"
